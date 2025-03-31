@@ -1,3 +1,93 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dialogware-text-to-software"
+version = "0.1.0"
+description = "DialogWare: Text-to-Software - system konwersji poleceń w języku naturalnym na operacje poprzez warstwy abstrakcji"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+    {name = "DialogWare Team", email = "contact@dialogware.com"}
+]
+maintainers = [
+    {name = "DialogWare Team", email = "contact@dialogware.com"}
+]
+keywords = [
+    "nlp",
+    "natural language processing",
+    "text-to-software",
+    "code generation",
+    "automation"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "aiohttp>=3.8.0",
+    "pandas>=1.3.0",
+    "difflib>=0.0.1",
+    "sqlite3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=3.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+    "mypy>=0.9.0",
+    "isort>=5.0.0",
+]
+
+browser = [
+    "selenium>=4.0.0",
+    "webdriver-manager>=3.0.0",
+]
+
+sql = [
+    "sqlalchemy>=1.4.0",
+]
+
+full = [
+    "dialogware-text-to-software[dev,browser,sql]",
+]
+
+[project.urls]
+Homepage = "https://github.com/dialogware/text-to-software"
+Documentation = "https://dialogware.github.io/text-to-software"
+Repository = "https://github.com/dialogware/text-to-software"
+Issues = "https://github.com/dialogware/text-to-software/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dialogware"]
+
+[tool.black]
+line-length = 88
+target-version = ["py37", "py38", "py39", "py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.7"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
