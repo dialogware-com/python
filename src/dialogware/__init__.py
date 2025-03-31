@@ -7,7 +7,7 @@ System umożliwiający konwersję poleceń w języku naturalnym na operacje
 poprzez kilka warstw abstrakcji, z możliwością generowania kodu w czasie rzeczywistym.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.4"
 __author__ = "DialogWare Team"
 
 import os
