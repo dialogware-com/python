@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.6] - 2025-03-31
+
+### Added
+- Changes in CONTRIBUTION.md
+- Changes in main.py
+- Changes in src/dialogware/plugins/sql_operations/SQLExecutor.py
+- Changes in src/dialogware/plugins/sql_operations/SQLParser.py
+- Changes in src/dialogware/plugins/sql_operations/SQLSchema.py
+- Changes in src/dialogware/plugins/sql_operations/initialize_module.py
+- Changes in test.py
+
 ## [0.1.5] - 2025-03-31
 
 ## [0.1.4] - 2025-03-31
