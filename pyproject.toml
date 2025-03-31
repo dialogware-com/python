@@ -3,22 +3,22 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "dialogware-text-to-software"
+name = "dialogware"
 version = "0.1.0"
-description = "DialogWare: Text-to-Software - system konwersji poleceń w języku naturalnym na operacje poprzez warstwy abstrakcji"
+description = "DialogWare - system konwersji poleceń w języku naturalnym na operacje poprzez warstwy abstrakcji"
 readme = "README.md"
 requires-python = ">=3.7"
 license = {file = "LICENSE"}
 authors = [
-    {name = "DialogWare Team", email = "contact@dialogware.com"}
+    {name = "DialogWare Team", email = "info@softreck.dev"}
 ]
 maintainers = [
-    {name = "DialogWare Team", email = "contact@dialogware.com"}
+    {name = "DialogWare Team", email = "info@softreck.dev"}
 ]
 keywords = [
     "nlp",
     "natural language processing",
-    "text-to-software",
+    "python",
     "code generation",
     "automation"
 ]
@@ -61,14 +61,14 @@ sql = [
 ]
 
 full = [
-    "dialogware-text-to-software[dev,browser,sql]",
+    "dialogware[dev,browser,sql]",
 ]
 
 [project.urls]
-Homepage = "https://github.com/dialogware/text-to-software"
-Documentation = "https://dialogware.github.io/text-to-software"
-Repository = "https://github.com/dialogware/text-to-software"
-Issues = "https://github.com/dialogware/text-to-software/issues"
+Homepage = "https://github.com/dialogware/python"
+Documentation = "https://dialogware.github.io/python"
+Repository = "https://github.com/dialogware/python"
+Issues = "https://github.com/dialogware/python/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/dialogware"]

@@ -1,4 +1,4 @@
-dialogware-text-to-software/
+dialogware/
 ├── LICENSE
 ├── README.md
 ├── pyproject.toml

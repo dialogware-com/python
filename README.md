@@ -35,23 +35,23 @@ System zawiera następujące moduły:
 ## Instalacja
 
 ```bash
-pip install dialogware-text-to-software
+pip install dialogware
 ```
 
 Lub zainstaluj z dodatkowymi funkcjonalnościami:
 
 ```bash
 # Z obsługą przeglądarki
-pip install dialogware-text-to-software[browser]
+pip install dialogware[browser]
 
 # Z rozszerzonym wsparciem dla SQL
-pip install dialogware-text-to-software[sql]
+pip install dialogware[sql]
 
 # Z narzędziami programistycznymi
-pip install dialogware-text-to-software[dev]
+pip install dialogware[dev]
 
 # Pełna instalacja
-pip install dialogware-text-to-software[full]
+pip install dialogware[full]
 ```
 
 ## Szybki start
