@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.8] - 2025-03-31
+
+### Added
+- Changes in src/dialogware/core/AbstractExecutor.py
+- Changes in src/dialogware/core/AbstractParser.py
+- Changes in src/dialogware/core/AbstractTranslator.py
+- Changes in src/dialogware/core/CommandResult.py
+- Changes in src/dialogware/core/DialogWareProcessor.py
+- Changes in src/dialogware/core/PipelineElement.py
+- Changes in src/dialogware/core/PluginManager.py
+- Changes in src/dialogware/debuggers/DSLAnalysisResult.py
+- Changes in src/dialogware/debuggers/DSLDebugger.py
+- Changes in src/dialogware/debuggers/DebugResult.py
+- Changes in src/dialogware/debuggers/ExecutionLog.py
+- Changes in src/dialogware/debuggers/PipelineTrace.py
+- Changes in src/dialogware/debuggers/setup_debuggers.py
+- Changes in src/dialogware/plugins/file_operations/FileOperationExecutor.py
+- Changes in src/dialogware/plugins/file_operations/FileOperationParser.py
+- Changes in src/dialogware/plugins/file_operations/FileOperationTranslator.py
+
+### Removed
+- Changes in src/dialogware/debuggers/dsl_debugger.py
+
 ## [0.1.7] - 2025-03-31
 
 ## [0.1.6] - 2025-03-31
