@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dialogware"
-version = "0.1.1"
+version = "0.1.8"
 description = "DialogWare - system konwersji poleceń w języku naturalnym na operacje poprzez warstwy abstrakcji"
 readme = "README.md"
 requires-python = ">=3.7"
